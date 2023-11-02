@@ -15,3 +15,21 @@ if salary.isnumeric() and housing.isnumeric() and bills.isnumeric() and food.isn
     print ('inputs confirmed valid')
 else :
     print('invalid input, please try again')
+
+#Taxes
+if int(salary) >= 0 and int(salary) <= 10000 :
+    tax = round(int(salary) * 5/100, 2)
+    print(tax)
+
+elif int(salary) >= 10001 and int(salary) <= 40000 :
+    tax = round(int(salary) * 0.1,)
+    print(tax)
+
+elif int(salary) >= 40001 and int(salary) <= 80000 :
+    tax = round(int(salary) * 15/100, 2)
+    print(tax)
+
+elif int(salary) >= 80001 :
+    tax = round(int(salary) * 20/100, 2)
+    print(tax)
+
